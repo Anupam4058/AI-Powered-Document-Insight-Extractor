@@ -14,23 +14,49 @@ export default function MainPage() {
   const [error, setError] = useState<string | null>(null);
   const [estimatedTime, setEstimatedTime] = useState<number>(30);
   const [apiConnected, setApiConnected] = useState<boolean | null>(null);
+  const [showConnectionError, setShowConnectionError] = useState<boolean>(false);
 
   // Check API health on component mount
   useEffect(() => {
+    let isMounted = true;
+    
     const checkApiConnection = async () => {
       try {
         await checkHealth();
-        setApiConnected(true);
+        if (isMounted) {
+          setApiConnected((prev) => {
+            if (prev === false) {
+              // Was disconnected, now connected - no popup needed
+            }
+            return true;
+          });
+          setShowConnectionError(false);
+        }
       } catch (err) {
-        setApiConnected(false);
-        console.warn('Backend API is not available:', err);
+        if (isMounted) {
+          setApiConnected((prev) => {
+            // Only show popup if connection was lost (was true, now false)
+            if (prev === true) {
+              setShowConnectionError(true);
+              setTimeout(() => {
+                setShowConnectionError(false);
+              }, 2000);
+            }
+            return false;
+          });
+          console.warn('Backend API is not available:', err);
+        }
       }
     };
 
     checkApiConnection();
     // Check every 30 seconds
     const interval = setInterval(checkApiConnection, 30000);
-    return () => clearInterval(interval);
+    
+    return () => {
+      isMounted = false;
+      clearInterval(interval);
+    };
   }, []);
 
   const handleFileSelect = (file: File) => {
@@ -99,24 +125,44 @@ export default function MainPage() {
           <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
             Extract structured insights from retail media documents in seconds.
           </p>
-          {/* API Connection Status */}
-          {apiConnected !== null && (
-            <div className="mt-4 flex justify-center">
-              <div className={`inline-flex items-center space-x-2 px-3 py-1 rounded-full text-sm ${
-                apiConnected 
-                  ? 'bg-green-100 text-green-800' 
-                  : 'bg-red-100 text-red-800'
-              }`}>
-                <div className={`w-2 h-2 rounded-full ${
-                  apiConnected ? 'bg-green-500' : 'bg-red-500'
-                }`}></div>
-                <span>
-                  {apiConnected ? 'Backend Connected' : 'Backend Disconnected'}
-                </span>
-              </div>
-            </div>
-          )}
         </header>
+
+        {/* Connection Error Popup */}
+        {showConnectionError && (
+          <div 
+            className="fixed top-4 left-1/2 z-50"
+            style={{ 
+              transform: 'translateX(-50%)',
+              animation: 'fadeInOut 2s ease-in-out'
+            }}
+          >
+            <div className="bg-red-500 text-white px-6 py-3 rounded-lg shadow-lg flex items-center space-x-2">
+              <svg
+                className="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+              <span className="font-medium">Backend connection lost</span>
+            </div>
+          </div>
+        )}
+        
+        <style>{`
+          @keyframes fadeInOut {
+            0% { opacity: 0; transform: translate(-50%, -10px); }
+            15% { opacity: 1; transform: translate(-50%, 0); }
+            85% { opacity: 1; transform: translate(-50%, 0); }
+            100% { opacity: 0; transform: translate(-50%, -10px); }
+          }
+        `}</style>
 
         {/* Main Content */}
         <div className="max-w-7xl mx-auto">

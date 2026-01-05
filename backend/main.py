@@ -349,30 +349,27 @@ async def extract_insights_endpoint(file: UploadFile = File(...)):
             # Get file size
             file_size = get_file_size(temp_file_path)
             
-            # Structure response according to Task 4.3 requirements
-            # Extract creative requirements from technical specs and brand guidelines
-            creative_requirements = {
-                "dimensions": insights.get("extracted_data", {}).get("technical_specs", {}).get("dimensions", []),
-                "formats": insights.get("extracted_data", {}).get("technical_specs", {}).get("formats", []),
-                "file_sizes": insights.get("extracted_data", {}).get("technical_specs", {}).get("file_sizes", []),
-                "colors": insights.get("extracted_data", {}).get("brand_guidelines", {}).get("colors", []),
-                "fonts": insights.get("extracted_data", {}).get("brand_guidelines", {}).get("fonts", []),
-                "tone": insights.get("extracted_data", {}).get("brand_guidelines", {}).get("tone", [])
-            }
-            
-            # Build structured response
+            # Build structured response (insights already has new structure)
             response_data = {
                 "success": True,
                 "message": "Insights extracted successfully",
-                "summary": insights.get("summary", ""),
+                "summary": insights.get("summary", {
+                    "goal": "",
+                    "dates": [],
+                    "channels": [],
+                    "primary_kpis": [],
+                    "key_constraints": []
+                }),
                 "document_type": insights.get("document_type", {}),
-                "creative_requirements": creative_requirements,
-                "technical_specs": insights.get("extracted_data", {}).get("technical_specs", {}),
-                "brand_guidelines": insights.get("extracted_data", {}).get("brand_guidelines", {}),
-                "kpis": insights.get("extracted_data", {}).get("kpis", {}),
-                "deadlines": insights.get("extracted_data", {}).get("deadlines", []),
-                "action_items": insights.get("extracted_data", {}).get("action_items", []),
-                "warnings": insights.get("extracted_data", {}).get("warnings", []),
+                "creative_requirements": insights.get("creative_requirements", {"must_have": [], "optional": []}),
+                "technical_specs": insights.get("technical_specs", []),
+                "guidelines": insights.get("guidelines", {
+                    "copy_rules": [],
+                    "design_rules": [],
+                    "accessibility_rules": [],
+                    "legal_rules": []
+                }),
+                "action_items": insights.get("action_items", []),
                 "file_metadata": {
                     "filename": file.filename,
                     "file_size": file_size,

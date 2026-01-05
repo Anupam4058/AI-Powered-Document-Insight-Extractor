@@ -19,51 +19,38 @@ export interface UploadResponse {
 export interface InsightsResponse {
   success: boolean;
   message: string;
-  summary: string;
+  summary: {
+    goal: string;
+    dates: string;
+    channels: string;
+    success: string;
+    must_include: string;
+    avoid: string;
+  };
   document_type: {
     type: string;
     confidence: number;
+    confidence_level?: string; // 'High', 'Medium', 'Low'
+    description?: string; // User-friendly description of the document type
   };
   creative_requirements: {
-    dimensions: string[];
-    formats: string[];
-    file_sizes: string[];
-    colors: string[];
-    fonts: string[];
-    tone: string[];
+    must_have: string[];
+    optional: string[];
   };
-  technical_specs: {
-    dimensions: string[];
-    formats: string[];
-    file_sizes: string[];
-    [key: string]: any;
-  };
-  brand_guidelines: {
-    colors: string[];
-    fonts: string[];
-    tone: string[];
-    [key: string]: any;
-  };
-  kpis: {
-    [key: string]: any;
-  };
-  deadlines: Array<{
-    date: string;
-    type?: string;
-    context?: string;
-    description?: string;
+  technical_specs: Array<{
+    placement: string;
+    size: string;
+    file_formats: string[];
+    min_font_size: string;
+    notes: string[];
   }>;
-  action_items: Array<string | {
-    task: string;
-    priority?: string;
-  }>;
-  warnings: Array<{
-    message?: string;
-    text?: string;
-    type?: string;
-    severity?: string;
-    keyword?: string;
-  }>;
+  guidelines: {
+    copy_rules: string[];
+    design_rules: string[];
+    accessibility_rules: string[];
+    legal_rules: string[];
+  };
+  action_items: string[];
   file_metadata: {
     filename: string;
     file_size: string;

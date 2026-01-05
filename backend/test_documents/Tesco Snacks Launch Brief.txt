@@ -1,0 +1,76 @@
+Tesco Summer Snacks Launch Brief
+Title: Tesco Summer Snacks Launch – Always-On Retail Media Campaign Brief
+Brand: CrunchJoy Snacks (Fictional)
+Category: Savoury Snacks / Crisps
+Markets: UK only
+Campaign Type: Brand awareness + trial driving via Tesco media
+1. Campaign Overview
+CrunchJoy is launching a new range of baked crisps exclusive to Tesco, targeting young families looking for lighter snacking options. The objective is to build awareness on Tesco-owned and social placements, while driving in-store and online trial during the summer holiday period.
+Key dates:
+•	Campaign live window: 10 June 2026 – 31 July 2026
+•	Media booking deadline: 20 May 2026
+•	Asset delivery deadline to Tesco Studio: 27 May 2026, 5:00 PM GMT
+Primary KPIs:
+•	Ad recall uplift vs Tesco benchmark on onsite brand placements (+8 percentage points)
+•	Click-through rate on onsite banners ≥ 0.40%
+•	Add-to-basket rate ≥ 9% on Checkout Double Density
+Secondary KPIs:
+•	Incremental sales uplift vs control stores: +6% during the live period
+•	Number of Clubcard transactions containing at least one CrunchJoy SKU
+2. Creative Requirements
+Mandatory elements on all Tesco onsite and social assets:
+•	Product packshot: Max 3 SKUs, with the “Sea Salt”, “Sour Cream & Chive” and “Smoky Paprika” bags shown. Lead SKU: Sea Salt.
+•	Brand logo: CrunchJoy logo in vector or high-res PNG, same logo to be used across all banners.
+•	Headline: Up to 35 characters. Must be benefit-led and cannot include price, discounts, or money-back claims. Example tone: “Light crunch, big flavour”.
+•	Subhead: Optional, up to 60 characters; no sustainability, nutrition, or health claims allowed.
+•	Background: Flat colour only for Tesco templates; background images cannot be used on Checkout placements.
+Tesco tags and value tiles:
+•	Tag text: Because the range is Tesco exclusive, the campaign must use the Tesco tag “Only at Tesco”.
+•	If any banner includes a price or promotion tile (Clubcard Price), a Tesco value tile must be used and is locked in position according to Tesco guidelines.
+•	Tag cannot be overlapped by copy, packshots, or logo.
+Copy restrictions:
+•	No green/sustainability claims (e.g. “eco-friendly”, “carbon neutral”).
+•	No nutrition or health claims (e.g. “low fat”, “high fibre”, “healthier choice”).
+•	No competitions, charity partnerships, or “money-back guarantee” language.
+•	No price call-outs in headline or subhead (e.g. “Just £1.50”, “Buy 1 get 1 free”).
+3. Technical Specifications
+Required placements and specs:
+1.	Tesco Onsite Brand Banner – Desktop
+•	Size: 1600x400 px
+•	Safe zones: 80 px on all sides free of logos, tags, or vital copy.
+•	Minimum font size: 20 px for headline and subhead.
+•	File format: JPG or PNG, max 500 KB.
+2.	Checkout Double Density
+•	Size: 1260x600 px
+•	Minimum font size: 20 px
+•	Packshot must be the closest element to the CTA, with minimum 24 px gap between packshot and CTA according to Tesco packshot safe zone rules.
+•	Flat background only; no photography of people.
+3.	Social – Facebook/Instagram Stories (9x16)
+•	Size: 1080x1920 px
+•	Social safe zone: Leave 200 px at top and 250 px at bottom free of text, logos, Tesco tags and value tiles.
+•	File format: MP4 (up to 15 seconds) or static JPG/PNG.
+•	If using Clubcard Price tile, ensure end date is included in tag copy: “Ends 3107”.
+Accessibility & contrast:
+•	All text and CTA elements must comply with WCAG AA contrast ratio standards.
+•	Minimum font size for SAYS placements (if used) is 12 px; for Brand and Checkout it is 20 px.
+4. Legal & Compliance
+Alcohol rules: Not applicable (non-alcoholic snacks), no Drinkaware lock-up required.
+Claims:
+•	Any form of comparative, survey-based, or superiority claims (e.g. “#1 in the UK”, “Preferred by 9 out of 10 families”) are not allowed in either headline or subhead.
+•	If any claim-like content is detected, it will result in a hard fail and assets will be rejected.
+Photography:
+•	People may be shown in social creative only if integral to the concept and cleared by brand legal team.
+•	For Tesco onsite, people photography is not permitted; product-only imagery is required.
+5. Deliverables & Action Items
+Assets to be delivered:
+•	3x static variants for Tesco Brand Banner (different headlines).
+•	2x static variants for Checkout Double Density.
+•	3x Facebook/Instagram Story assets (can be static or short video).
+Action items:
+•	Creative agency to supply layered source files (PSD/AI) plus final exports for all sizes by 27 May 2026.
+•	Brand team to confirm SKUs and packshot order by 15 May 2026.
+•	Tesco Studio to run compliance checks on tags, value tiles, packshot position, and copy before uploading templates.
+Risks & dependencies:
+•	Late asset delivery will delay go-live and may cause loss of booked inventory.
+•	Non-compliant claims or tags will trigger rework cycles and risk missing the launch window.
+

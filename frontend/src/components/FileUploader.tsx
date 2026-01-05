@@ -1,4 +1,4 @@
-import { useState, useRef, DragEvent } from 'react';
+import { useState, useRef, type DragEvent } from 'react';
 import { validateFile, formatFileSize } from '../utils/fileValidation';
 
 interface FileUploaderProps {

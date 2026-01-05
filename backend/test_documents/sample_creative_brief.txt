@@ -1,0 +1,74 @@
+CREATIVE BRIEF - Q4 RETAIL CAMPAIGN
+Brand: TechRetail Inc.
+Campaign: Holiday Shopping Season 2026
+Date: October 15, 2025
+
+OVERVIEW
+This creative brief outlines the requirements for our Q4 holiday shopping campaign. The campaign will run from November 1, 2026 through January 15, 2026. All creative assets must be submitted by October 25, 2025 for review.
+
+TECHNICAL SPECIFICATIONS
+Ad Dimensions:
+- Display Ads: 1200x628 pixels (Facebook/LinkedIn)
+- Banner Ads: 1080x1080 pixels (Instagram)
+- Video Ads: 1920x1080 pixels (YouTube)
+- Story Ads: 1080x1920 pixels (Instagram Stories)
+
+File Formats:
+- Images: JPG or PNG format
+- Videos: MP4 format
+- Maximum file size: 10MB per image, 50MB per video
+
+DEADLINES
+- Creative concepts due: October 20, 2025
+- Final assets due: October 25, 2025
+- Campaign launch: November 1, 2026
+- Campaign end: January 15, 2026
+
+PERFORMANCE KPIs
+Target metrics for this campaign:
+- CTR (Click-Through Rate): 2.5%
+- CPC (Cost Per Click): $0.75
+- CPM (Cost Per Mille): $5.50
+- Conversion Rate: 3.2%
+- ROAS (Return on Ad Spend): 4.5
+- CPA (Cost Per Acquisition): $25.00
+- Target Impressions: 1,000,000
+- Target Clicks: 25,000
+
+BRAND GUIDELINES
+Colors:
+- Primary Brand Color: #FF5733 (RGB(255, 87, 51))
+- Secondary Color: #3498DB (RGB(52, 152, 219))
+- Accent Color: Blue
+- Background: White
+
+Fonts:
+- Primary Font: Arial, 16pt
+- Secondary Font: Helvetica, 14pt
+- Headline Font: Montserrat, 24pt
+
+Tone of Voice:
+The brand voice should be professional, friendly, and modern. Maintain a trustworthy and innovative tone throughout all creative assets.
+
+ACTION ITEMS
+1. Design initial creative concepts for all ad formats
+2. Review and approve brand color usage in all assets
+3. Ensure all assets meet technical specifications
+4. Submit assets for legal and compliance review
+5. Schedule campaign launch and monitor performance
+6. Prepare analytics dashboard for tracking KPIs
+7. Coordinate with media team for ad placement
+
+COMPLIANCE & WARNINGS
+WARNING: All creative assets must comply with FTC advertising guidelines. Prohibited content includes false claims, misleading information, and unsubstantiated performance promises.
+
+Legal Requirements:
+- Must include disclaimer text for promotional offers
+- Required by law to display terms and conditions
+- Regulatory compliance mandatory for all financial claims
+- Violation of guidelines may result in penalties and fines
+
+CONTACT INFORMATION
+For questions, contact the creative team at creative@techretail.com.
+Deadline for questions: October 22, 2025.
+

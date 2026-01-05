@@ -6,4 +6,5 @@ python-docx
 transformers
 torch
 python-dotenv
+sentencepiece
 

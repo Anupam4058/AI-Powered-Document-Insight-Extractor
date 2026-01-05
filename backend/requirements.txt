@@ -4,6 +4,7 @@ python-multipart
 pdfplumber
 python-docx
 transformers
+--extra-index-url https://download.pytorch.org/whl/cpu
 torch
 python-dotenv
 sentencepiece

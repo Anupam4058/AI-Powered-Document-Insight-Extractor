@@ -2,6 +2,8 @@
 
 An intelligent document analysis application that extracts structured insights from retail media documents (PDF/DOCX) using AI-powered natural language processing. The application uses transformer models to summarize documents, classify document types, and extract key information like deadlines, KPIs, technical specifications, and action items.
 
+My Resume Link: https://drive.google.com/file/d/1A7FyKS6lDT1n3T7JKpFBNPSRTRg7hhSL/view?usp=drive_link
+
 ## 🎯 Features
 
 ### Document Processing

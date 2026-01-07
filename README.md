@@ -450,7 +450,6 @@ Example response from `/api/extract-insights`:
 When everything is working correctly:
 - ✅ Backend server running on port 8000
 - ✅ Frontend server running on port 5173
-- ✅ Green "Backend Connected" badge appears
 - ✅ Can upload PDF files
 - ✅ Can upload DOCX files
 - ✅ Processing indicator shows during upload

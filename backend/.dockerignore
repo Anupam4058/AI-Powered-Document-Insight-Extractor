@@ -1,0 +1,53 @@
+# ============================================
+# Docker ignore – keep image small for EC2 t2.micro
+# ============================================
+
+# Tests and dev-only (not needed at runtime)
+test_parser.py
+test_ai_extraction.py
+test_model_loader.py
+test_endpoints.py
+test_documents/
+check_models.py
+
+# Empty/unused
+Readme.md
+models/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+.venv
+*.egg-info/
+.eggs/
+dist/
+build/
+*.egg
+
+# Git and IDE
+.git/
+.gitignore
+.dockerignore
+.vscode/
+.idea/
+*.md
+
+# Local uploads (created at runtime)
+temp_uploads/
+
+# Env (inject at runtime, don’t bake in image)
+.env
+.env.*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docs and misc
+*.pdf
+*.docx

@@ -2,6 +2,10 @@
 
 An intelligent document analysis application that extracts structured insights from retail media documents (PDF/DOCX) using AI-powered natural language processing. The application uses transformer models to summarize documents, classify document types, and extract key information like deadlines, KPIs, technical specifications, and action items.
 
+- Project Video Explanation: https://drive.google.com/file/d/11_T_IGaWlPG041uA_O7IMRkdhUR5Ugg8/view?usp=drive_link
+
+- Live Project Demo: https://ai-powered-document-insight-extractor.vercel.app/
+
 ## 🎯 Features
 
 ### Document Processing
@@ -450,7 +454,6 @@ Example response from `/api/extract-insights`:
 When everything is working correctly:
 - ✅ Backend server running on port 8000
 - ✅ Frontend server running on port 5173
-- ✅ Green "Backend Connected" badge appears
 - ✅ Can upload PDF files
 - ✅ Can upload DOCX files
 - ✅ Processing indicator shows during upload
